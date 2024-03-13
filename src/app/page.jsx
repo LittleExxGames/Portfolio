@@ -1,3 +1,5 @@
+import Navbar from '../components/Navbar/Navbar';
+
 export const metadata = {
   title: 'Portfolio - Home',
   description: 'Home page of my portfolio.',
@@ -5,8 +7,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
-      Me and the Homies and the random guy
-    </div>
+    <div><Navbar
+      options={[
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About' },
+        { path: '/contact', label: 'Contact' },
+      ]} />
+      </div>
   );
 }
