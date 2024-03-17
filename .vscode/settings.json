@@ -1,7 +1,5 @@
 {
-  "eslint.validate": [
-    "javascript"
-  ],
+  "eslint.validate": ["javascript"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -11,7 +9,7 @@
   "html.format.extraLiners": " ",
   "files.eol": "\n",
   "jestrunner.disableCodeLens": true,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "editor.minimap.enabled": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.fontSize": 16,
@@ -23,7 +21,7 @@
   "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/node_modules": true,
-    "**/package-lock.json": true,
+    "**/package-lock.json": true
   },
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh"
 }

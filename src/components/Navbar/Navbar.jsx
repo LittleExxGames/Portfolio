@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function Navbar({ options }) {
   return (
     <nav data-testid="nav" className={'navbar'}>
-      <ul data-testid="ul" className="navbar ul">
+      <ul data-testid="ul" >
         {options?.map((option, index) => (
-          <li key={index} data-testid={`li${index}`} className="navbar li">
+          <li key={index} data-testid={`li${index}`}>
             <a data-testid={`a${index}`} href={option.path} className="link">
               {option.label}
             </a>
