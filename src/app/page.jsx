@@ -10,12 +10,6 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-      <Navbar
-      options={[
-        { path: '/', label: 'Home' },
-        { path: '/about', label: 'About' },
-        { path: '/contact', label: 'Contact' },
-      ]} />
       <SignupWidget
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}

@@ -1,4 +1,6 @@
-import {Roboto} from 'next/font/google';
+import './layout.css';
+import Navbar from '../components/Navbar/Navbar';
+import {Roboto, Roboto_Flex} from 'next/font/google';
 import './globals.css';
 
 const roboto = Roboto({
@@ -10,8 +12,18 @@ const roboto = Roboto({
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en">
-    <body className={roboto.className}>{children}</body>
-    </html>
+    <>
+      <div  className="layout-container">
+      <Navbar
+      options={[
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About' },
+        { path: '/contact', label: 'Contact' },
+      ]}/>
+      </div>
+      <main>
+        {children}
+      </main>
+    </>
   )
 }
