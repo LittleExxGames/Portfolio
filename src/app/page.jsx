@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
@@ -18,6 +19,8 @@ const skills = [
 
 const Home = () => {
   return (
+    <div className='About-Me'>
+<div>
     <div>
       <Navbar />
       <h1>Welcome to My Portfolio</h1>
@@ -28,6 +31,8 @@ const Home = () => {
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}
       />
+      </div>
+      <div>
       <WorkWidget
         title={'Work'}
         content={'My work experience.'}
@@ -41,12 +46,16 @@ const Home = () => {
           },
         ]}
       />
-      <SkillsWidget
+      </div>
+      <div>
+        <SkillsWidget      
         title={'Skills'}
         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
         skills={skills}
       />
     </div>
+      </div>
+      </div>
   );
 }
 
