@@ -1,11 +1,17 @@
 import Navbar from '../components/Navbar/Navbar';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
+import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 
 export const metadata = {
   title: 'Portfolio - Home',
   description: 'Home page of my portfolio.',
 }
+const skills = [
+  { name: 'HTML', proficiency: 60, icon: 'html5.png' },
+  { name: 'CSS', proficiency: 50, icon: 'css3.png' },
+  { name: 'JavaScript', proficiency: 75, icon: 'javascript.png' },
+];
 
 export default function Home() {
   return (
@@ -48,7 +54,11 @@ export default function Home() {
           },
         ]}
       />
+        <SkillsWidget
+        title={'Skills'}
+        content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
+        skills={skills}
+      />
       </div>
-
   );
 }
