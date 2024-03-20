@@ -1,7 +1,8 @@
-import Navbar from '../components/Navbar/Navbar';
+import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
+
 
 export const metadata = {
   title: 'Portfolio - Home',
@@ -15,11 +16,14 @@ const skills = [
 
 export default function Home() {
   return (
-    <div>
+    <div className='About-Me'>
+<div>
       <SignupWidget
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}
       />
+      </div>
+      <div>
       <WorkWidget
         title={'Work'}
         content={'My work experience.'}
@@ -54,11 +58,14 @@ export default function Home() {
           },
         ]}
       />
+      </div>
+      <div>
         <SkillsWidget
         title={'Skills'}
         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
         skills={skills}
       />
+      </div>
       </div>
   );
 }
