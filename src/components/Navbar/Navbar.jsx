@@ -1,14 +1,14 @@
 import './Navbar.css';
 import PropTypes from 'prop-types';
 
-function Navbar({ options }) {
+function Navbar({ links }) {
   return (
     <nav data-testid="nav" className={'navbar'}>
       <ul data-testid="ul" >
-        {options?.map((option, index) => (
+        {links?.map((link, index) => (
           <li key={index} data-testid={`li${index}`}>
-            <a data-testid={`a${index}`} href={option.path} className="link">
-              {option.label}
+            <a data-testid={`a${index}`} href={link.url} className="link">
+              {link.title}
             </a>
           </li>
         ))}
@@ -20,8 +20,8 @@ function Navbar({ options }) {
 Navbar.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      path: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

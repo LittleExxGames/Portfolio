@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
 }
-.Navbar{
+Navbar{
   margin: "0 auto"
+}
+Footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

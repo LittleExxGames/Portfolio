@@ -34,12 +34,7 @@ export default function RootLayout({children}) {
   return (
     <>
       <div  className="layout-container">
-      <Navbar
-      options={[
-        { path: '/', label: 'Home' },
-        { path: '/about', label: 'About' },
-        { path: '/contact', label: 'Contact' },
-      ]}/>
+      <Navbar links={links}/>
       </div>
       <main>
         {children}

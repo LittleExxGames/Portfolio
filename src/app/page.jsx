@@ -19,14 +19,13 @@ const skills = [
 
 const Home = () => {
   return (
-    <div className= 'header/footer'>
-      <h1>Welcome to My Portfolio</h1>
+    <div className='header/footer'>
+      <h1 className='title'>Welcome to My Portfolio</h1>
       <Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
       <Paragraph text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
       {/* Add more paragraphs as needed */}
 <div className='About-Me'>
     <div>
-      <Navbar />
       <SignupWidget
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}
