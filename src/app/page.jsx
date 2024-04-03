@@ -19,14 +19,14 @@ const skills = [
 
 const Home = () => {
   return (
-    <div className='About-Me'>
-<div>
     <div>
-      <Navbar />
       <h1>Welcome to My Portfolio</h1>
       <Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
       <Paragraph text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
       {/* Add more paragraphs as needed */}
+<div className='About-Me'>
+    <div>
+      <Navbar />
       <SignupWidget
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}
@@ -48,7 +48,7 @@ const Home = () => {
       />
       </div>
       <div>
-        <SkillsWidget      
+        <SkillsWidget
         title={'Skills'}
         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
         skills={skills}
