@@ -4,3 +4,8 @@
   right: 0;
   padding: 10px;
 }
+/* For the header and footer*/
+.header/footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
