@@ -36,13 +36,13 @@
 }
 
 .signup-widget button {
-  padding: 2px 24px;
+  padding: 2px 2px;
   width: 42px;
   text-align: center;
   border-radius: 6px;
   background-color: #4caf50;
   color: white;
-  line-height: 16px;
+  line-height: 6px;
   font-size: 14px;
   cursor: pointer;
 }
