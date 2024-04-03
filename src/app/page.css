@@ -4,6 +4,7 @@
 
 .About-Me{
   position: absolute;
+  top: 100;
   right: 0;
   padding: 10px 10px 80px 10px ;
 }
