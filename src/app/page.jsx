@@ -26,7 +26,6 @@ const Home = () => {
       {/* Add more paragraphs as needed */}
 <div className='About-Me'>
     <div>
-      <Navbar />
       <SignupWidget
         title={'Stay up to date'}
         content={'Get notified when I publish something new, and unsubscribe at any time.'}
