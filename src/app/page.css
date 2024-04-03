@@ -4,9 +4,8 @@
 
 .About-Me{
   position: absolute;
-  top: 0;
   right: 0;
-  padding: 80px 10px;
+  padding: 10px 10px 80px 10px ;
 }
 /* For the header and footer*/
 .header/footer {
