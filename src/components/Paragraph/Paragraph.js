@@ -1,5 +1,7 @@
+import "./Paragraph.css"
+
 const Paragraph = ({ text }) => {
-  return <p className="text-gray-800">{text}</p>;
+  return <p className="paragraph">{text}</p>;
 };
 
 export default Paragraph;
