@@ -14,7 +14,7 @@ const roboto = Roboto({
 const links = [
   {
     title: 'Home',
-    url: '/home',
+    url: '/',
   },
   {
     title: 'About',
