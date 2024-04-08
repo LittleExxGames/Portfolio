@@ -18,7 +18,7 @@ function Navbar({ links }) {
 }
 
 Navbar.propTypes = {
-  options: PropTypes.arrayOf(
+  links: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
