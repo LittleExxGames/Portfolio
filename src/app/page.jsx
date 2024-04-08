@@ -20,7 +20,7 @@ const skills = [
 const Home = () => {
   return (
     <div className='page'>
-      <Paragraph title="Welcome to My Portfolio" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+      <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
       {/* Add more paragraphs as needed */}
 <div className='About-Me'>
     <div>
