@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
@@ -67,13 +66,12 @@ const Home = () => {
       </div>
       <div>
         <SkillsWidget
-        title={'Skills'}
-        content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
-        skills={skills}
-      />
+          title={'Skills'}
+          content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
+          skills={skills}
+        />
+      </div>
     </div>
-      </div>
-      </div>
   );
 }
 
