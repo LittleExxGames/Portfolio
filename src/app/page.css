@@ -8,3 +8,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.articleData {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}

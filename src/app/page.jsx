@@ -5,26 +5,46 @@ import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 import Paragraph from '../components/Paragraph/Paragraph.js';
+import ArticleCard from '../components/ArticleCard/ArticleCard';
+
 
 export const metadata = {
   title: 'Portfolio - Home',
   description: 'Home page of my portfolio.',
 }
 
-const skills = [
-  { name: 'HTML', proficiency: 60, icon: 'html5.png' },
-  { name: 'CSS', proficiency: 50, icon: 'css3.png' },
-  { name: 'JavaScript', proficiency: 75, icon: 'javascript.png' },
-];
-
 const Home = () => {
+  // Example article data
+  const articleData = {
+    date: '2024-04-07',
+    title: 'Example Article',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link: 'https://www.example.com/article',
+  };
+
+  const skills = [
+    { name: 'HTML', proficiency: 60, icon: 'html5.png' },
+    { name: 'CSS', proficiency: 50, icon: 'css3.png' },
+    { name: 'JavaScript', proficiency: 75, icon: 'javascript.png' },
+  ];
+
   return (
     <div className='header/footer'>
       <Paragraph title="Welcome to My Portfolio"/>
       <Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
       <Paragraph text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
       {/* Add more paragraphs as needed */}
+
 <div className='About-Me'>
+<div>
+          {/* Include the ArticleCard component with articleData */}
+          <ArticleCard
+            date={articleData.date}
+            title={articleData.title}
+            content={articleData.content}
+            link={articleData.link}
+          />
+        </div>
     <div>
       <SignupWidget
         title={'Stay up to date'}
