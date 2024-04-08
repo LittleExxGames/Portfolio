@@ -1,0 +1,45 @@
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.company-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.company-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.company-card h2 {
+  margin: 0;
+}
+
+.company-card h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.company-card-description {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.company-card-website {
+  text-decoration: none;
+  color: #007bff;
+}
