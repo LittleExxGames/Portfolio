@@ -2,8 +2,10 @@
   padding: 0px 20px;
   max-width: 1000px;
   min-width: 200px;
+  white-space: preline;
  }
 
- .paragraph h{
+ .paragraph h1{
   font-weight: bold;
+  font-size: 24px;
  }

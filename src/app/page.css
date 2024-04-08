@@ -1,12 +1,15 @@
-.About-Me{
-  position: absolute;
-  right: 0;
-  padding: 10px 10px 80px 10px ;
+.page {
+  display: flex;
+  justify-content: center;
 }
-/* For the header and footer*/
-.header/footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+.content {
+  flex: 1;
+  max-width: 1000px;
+}
+
+.About-Me {
+  padding: 10px;
 }
 .articleData {
   position: absolute;
