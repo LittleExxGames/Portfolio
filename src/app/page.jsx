@@ -20,7 +20,7 @@ const skills = [
 const Home = () => {
   return (
     <div className='header/footer'>
-      <h1 className='title'>Welcome to My Portfolio</h1>
+      <Paragraph title="Welcome to My Portfolio"/>
       <Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
       <Paragraph text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
       {/* Add more paragraphs as needed */}
