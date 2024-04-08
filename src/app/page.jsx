@@ -4,7 +4,7 @@ import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
-import Paragraph from '../components/Paragraph/Paragraph.js';
+import Paragraph from '../components/Paragraph/Paragraph.jsx';
 
 export const metadata = {
   title: 'Portfolio - Home',
@@ -19,10 +19,8 @@ const skills = [
 
 const Home = () => {
   return (
-    <div className='header/footer'>
-      <Paragraph title="Welcome to My Portfolio"/>
-      <Paragraph text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-      <Paragraph text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+    <div className='page'>
+      <Paragraph title="Welcome to My Portfolio" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
       {/* Add more paragraphs as needed */}
 <div className='About-Me'>
     <div>
