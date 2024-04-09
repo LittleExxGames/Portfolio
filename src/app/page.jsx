@@ -28,9 +28,12 @@ const Home = () => {
 
   return (
     <div className='page'>
-      <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
-      {/* Add more paragraphs as needed */}
-<div>
+      <div className = 'intro'>
+        <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
+        {/* Add more paragraphs as needed */}
+      </div>
+      <div className = 'body'>
+        <div className= 'articles'>
           {/* Include the ArticleCard component with articleData */}
           <ArticleCard
             date={articleData.date}
@@ -39,14 +42,13 @@ const Home = () => {
             link={articleData.link}
           />
         </div>
-    <div>
-      <div className='About-Me'>
-        <div>
+        <div className='About-Me'>
+          <div>
           <SignupWidget
             title={'Stay up to date'}
             content={'Get notified when I publish something new, and unsubscribe at any time.'}
-          />
-        </div>
+              />
+          </div>
         <div>
           <WorkWidget
             title={'Work'}
@@ -91,7 +93,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>
+      </div>
     </div>
   );
 }

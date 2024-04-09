@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 420px;
   row-gap: 12px;
+  margin-block-end: 0em;
 }
 
 .signup-widget h2 {
