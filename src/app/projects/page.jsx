@@ -41,7 +41,7 @@ const CompanyList = () => {
         <CompanyCard
           description="Description of Company"
           website="https://www.example.com"
-          logo="/path/to/logo.png"
+          logo="/path/to/ensign.png"
           title="Company Title"
           key="company2"
         />
