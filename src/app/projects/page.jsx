@@ -8,11 +8,13 @@ const CompanyList = () => {
       <div className="company-card">
         <div>
           <img src={logo} alt={`${title} Logo`} className="company-card-logo" />
+
           <h2>{title}</h2>
         </div>
         <div>
           <p className="company-card-description">{description}</p>
           <a href={website} target="_blank" rel="noreferrer" className="company-card-website">
+          <img scr="link.svg" alt="" className="company-card-link.img" />
             Visit Website
           </a>
         </div>
@@ -28,54 +30,56 @@ const CompanyList = () => {
   };
 
   return (
-    <div className="company-list">
-      {/* First row */}
-      <div className="company-row">
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company1"
-        />
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company2"
-        />
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company3"
-        />
-      </div>
-      {/* Second row */}
-      <div className="company-row">
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company4"
-        />
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company5"
-        />
-        <CompanyCard
-          description="Description of Company"
-          website="https://www.example.com"
-          logo="ensign.png"
-          title="Company Title"
-          key="company6"
-        />
+    <div className="page">
+      <div className="company-list">
+        {/* First row */}
+        <div className="company-row">
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company1"
+          />
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company2"
+          />
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company3"
+          />
+        </div>
+        {/* Second row */}
+        <div className="company-row">
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company4"
+          />
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company5"
+          />
+          <CompanyCard
+            description="Description of Company"
+            website="https://www.example.com"
+            logo="ensign.png"
+            title="Company Title"
+            key="company6"
+          />
+        </div>
       </div>
     </div>
   );
