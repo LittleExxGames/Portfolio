@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './project.css';
+import './page.css';
 
 const CompanyList = () => {
   const CompanyCard = ({ description, website, logo, title }) => {
