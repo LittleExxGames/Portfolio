@@ -44,55 +44,55 @@ const Home = () => {
         </div>
         <div className='About-Me'>
           <div>
-          <SignupWidget
-            title={'Stay up to date'}
-            content={'Get notified when I publish something new, and unsubscribe at any time.'}
-              />
+            <SignupWidget
+              title={'Stay up to date'}
+              content={'Get notified when I publish something new, and unsubscribe at any time.'}
+            />
           </div>
-        <div>
-          <WorkWidget
-            title={'Work'}
-            content={'My work experience.'}
-            experiences={[
-              {
-                logo: '/slack.png',
-                organization: 'Slack',
-                jobTitle: 'Software Engineer',
-                startYear: 2016,
-                endYear: null,
-              },
-              {
-                logo: '/spotify.png',
-                organization: 'Spotify',
-                jobTitle: 'Software Engineer',
-                startYear: 2014,
-                endYear: 2015,
-              },
-              {
-                logo: '/audible.png',
-                organization: 'Audible',
-                jobTitle: 'Software Engineer',
-                startYear: 2012,
-                endYear: 2013,
-              },
-              {
-                logo: '/microsoft.png',
-                organization: 'Microsoft',
-                jobTitle: 'Software Engineer',
-                startYear: 2010,
-                endYear: 2011,
-              },
-            ]}
-          />
+          <div>
+            <WorkWidget
+              title={'Work'}
+              content={'My work experience.'}
+              experiences={[
+                {
+                  logo: '/slack.png',
+                  organization: 'Slack',
+                  jobTitle: 'Software Engineer',
+                  startYear: 2016,
+                  endYear: null,
+                },
+                {
+                  logo: '/spotify.png',
+                  organization: 'Spotify',
+                  jobTitle: 'Software Engineer',
+                  startYear: 2014,
+                  endYear: 2015,
+                },
+                {
+                  logo: '/audible.png',
+                  organization: 'Audible',
+                  jobTitle: 'Software Engineer',
+                  startYear: 2012,
+                  endYear: 2013,
+                },
+                {
+                  logo: '/microsoft.png',
+                  organization: 'Microsoft',
+                  jobTitle: 'Software Engineer',
+                  startYear: 2010,
+                  endYear: 2011,
+                },
+              ]}
+            />
+          </div>
+          <div>
+            <SkillsWidget
+              title={'Skills'}
+              content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
+              skills={skills}
+            />
+          </div>
         </div>
-        <div>
-          <SkillsWidget
-            title={'Skills'}
-            content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
-            skills={skills}
-          />
-        </div>
-      </div>
       </div>
     </div>
   );
