@@ -1,12 +1,17 @@
 .layout-container{
+position: fixed;
   display: flex;
   justify-content: center;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: 20px;
 }
-Navbar{
-  margin: "0 auto"
+Navbar {
+    //position: fixed;
+
 }
 Footer{
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
