@@ -43,13 +43,13 @@ const Home = () => {
           />
         </div>
         <div className='About-Me'>
-          <div>
+          <div className="widget">
             <SignupWidget
               title={'Stay up to date'}
               content={'Get notified when I publish something new, and unsubscribe at any time.'}
             />
           </div>
-          <div>
+          <div className="widget">
             <WorkWidget
               title={'Work'}
               content={'My work experience.'}
@@ -85,7 +85,7 @@ const Home = () => {
               ]}
             />
           </div>
-          <div>
+          <div className="widget">
             <SkillsWidget
               title={'Skills'}
               content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}

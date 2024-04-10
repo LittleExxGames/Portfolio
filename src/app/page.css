@@ -7,7 +7,7 @@
 
 .body {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .content {
@@ -17,9 +17,10 @@
 
 .About-Me {
   padding: 10px;
-  justify-content: right;
+  margin-left: auto;
 }
 
-.About-Me div {
+.widget {
  margin-block-end: 0em;
+ padding: 0px 0px 10px;
 }
