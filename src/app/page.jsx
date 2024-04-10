@@ -41,6 +41,18 @@ const Home = () => {
             content={articleData.content}
             link={articleData.link}
           />
+          <ArticleCard
+            date={articleData.date}
+            title={articleData.title}
+            content={articleData.content}
+            link={articleData.link}
+          />
+          <ArticleCard
+            date={articleData.date}
+            title={articleData.title}
+            content={articleData.content}
+            link={articleData.link}
+          />
         </div>
         <div className='About-Me'>
           <div className="widget">
