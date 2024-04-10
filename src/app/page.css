@@ -15,6 +15,10 @@
   max-width: 1000px;
 }
 
+.articles{
+  width: 60%;
+}
+
 .About-Me {
   padding: 10px;
   margin-left: auto;
