@@ -23,7 +23,7 @@
   color: #777;
 }
 
-.signup-widget .input-row {
+.input-row {
   display: flex;
   flex-direction: row;
   column-gap: 16px;
