@@ -6,6 +6,8 @@ import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 import Paragraph from '../components/Paragraph/Paragraph.jsx';
 
+//test changes
+
 export const metadata = {
   title: 'Portfolio - Home',
   description: 'Home page of my portfolio.',
