@@ -31,12 +31,21 @@ const Home = () => {
   return (
     <div className='page'>
       <div className = 'intro'>
+        <div className='profileMain'>
+          <img src="GigaChad.png" alt="Profile" />
+        </div>
         <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
         {/* Add more paragraphs as needed */}
         <div className = 'profiles'>
-          <img src="linkedin-mode-light.png" alt="Linkedin" />
-          <img src="x-mode-light.png" alt="X" />
-          <img src="github-mode-light.png" alt="Github" />
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="linkedin-mode-light.png" alt="Linkedin" />
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="x-mode-light.png" alt="X" />
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <img src="github-mode-light.png" alt="Github" />
+          </a>
         </div>
       </div>
       <div className = 'body'>
