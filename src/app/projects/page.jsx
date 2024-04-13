@@ -14,7 +14,7 @@ const CompanyList = () => {
         <div>
           <p className="company-card-description">{description}</p>
           <a href={website} target="_blank" rel="noreferrer" className="company-card-website">
-          <img scr="link.svg" alt="" className="company-card-link.img" />
+          <img scr="/link.svg" alt="" className="company-card-link.img"></img>
             Visit Website
           </a>
         </div>
@@ -28,57 +28,22 @@ const CompanyList = () => {
     logo: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   };
+  const companies = [
+    { description: 'Company 1 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 1' },
+    { description: 'Company 2 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 2' },
+    { description: 'Company 3 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 3' },
+    { description: 'Company 4 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 4' },
+    { description: 'Company 5 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 5' },
+    { description: 'Company 6 description', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 6' },
+  ];
+
 
   return (
     <div className="page">
+
       <div className="company-list">
-        {/* First row */}
         <div className="company-row">
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company1"
-          />
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company2"
-          />
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company3"
-          />
-        </div>
-        {/* Second row */}
-        <div className="company-row">
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company4"
-          />
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company5"
-          />
-          <CompanyCard
-            description="Description of Company"
-            website="https://www.example.com"
-            logo="ensign.png"
-            title="Company Title"
-            key="company6"
-          />
+        {companies.map((company, index) => <CompanyCard key={index} {...company} />)}
         </div>
       </div>
     </div>
