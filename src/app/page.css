@@ -1,14 +1,32 @@
 .page {
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
-  padding: 70px 0px;
+  padding: 70px 9vw;
+}
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 70px 0px;
+  }
+
+}
+
+.profiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.profiles img {
+  width: 25px;
+  height: 25px;
 }
 
 .body {
+  padding: 15px 0px 0px 0px;
   display: flex;
+  flex-direction: row;
   width: 100%;
 }
+
 
 .content {
   flex: 1;
@@ -22,7 +40,7 @@
 .About-Me {
   padding: 10px;
   margin-left: auto;
-  margin-right: 32px;
+
 }
 
 .widget {
@@ -32,4 +50,14 @@
 
 .About-Me, .articles {
   padding: 10px 25px 0px 25px;
+  }
+
+  @media (max-width: 600px) {
+
+    .body {
+      flex-direction: column;
+    }
+    .articles{
+      width: 100%;
+    }
   }
