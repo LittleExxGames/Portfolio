@@ -1,6 +1,6 @@
 import './UsesSection.css';
 import PropTypes from 'prop-types';
-import UseCard from '../UseCard/UsesCard.jsx';
+import UsesCard from '../UsesCard/UsesCard.jsx';
 
 const UsesSection = ({ items }) => {
   return (
@@ -13,7 +13,7 @@ const UsesSection = ({ items }) => {
                 <h2>{group.groupName}</h2>
                 <div className="uses-section__group-content">
                   {group.items.map((item, itemIndex) => (
-                    <UseCard title={item.title} content={item.description} key={itemIndex} />
+                    <UsesCard title={item.title} content={item.description} key={itemIndex} />
                   ))}
                 </div>
               </div>

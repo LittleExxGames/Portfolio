@@ -1,3 +1,8 @@
+import React from 'react';
+import './page.css';
+import Paragraph from '../../components/Paragraph/Paragraph.jsx';
+import UsesSection from '../../components/UsesSection/UsesSection.jsx';
+
 export const metadata = {
   title: 'Portfolio - Uses',
   description: 'The uses page of my portfolio.',
@@ -86,6 +91,19 @@ const items = [
 ];
 export default function Uses() {
   return (
-    <div>Uses</div>
+    <div className='page'>
+      <div className='intro'>
+        <Paragraph
+          title='Welcome to My Portfolio'
+          text={[
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+          ]}
+        />
+      </div>
+      <div>
+        <UsesSection items={items} />
+      </div>
+    </div>
   );
 }
