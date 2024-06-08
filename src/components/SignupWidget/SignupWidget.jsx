@@ -4,7 +4,7 @@ import './SignupWidget.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
+const SignupWidget = ({ title, content, simulateNetworkRequestTime = 2000 }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -40,6 +40,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
               required
               disabled={busy}
               className="input"
+              id = "signup-email"
             ></input>
             <button type="submit" disabled={busy} className="button">
               {busy ? 'Joining...' : 'Join'}
@@ -55,10 +56,6 @@ SignupWidget.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   simulateNetworkRequestTime: PropTypes.number,
-};
-
-SignupWidget.defaultProps = {
-  simulateNetworkRequestTime: 2000,
 };
 
 export default SignupWidget;

@@ -27,6 +27,11 @@
   margin: 3px 5px;
 }
 
+.news {
+  padding: 0px 0px 0px 20px;
+  font-size: 3em;
+}
+
 .body {
   padding: 15px 0px 0px 0px;
   display: flex;
@@ -62,6 +67,7 @@
 
 .About-Me, .articles {
   padding: 10px 25px 0px 25px;
+  min-width: 300px;
   }
 
   @media (max-width: 600px) {

@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './page.css';
-import Paragraph from '../../components/Paragraph/Paragraph.jsx';
+import React from "react";
+import PropTypes from "prop-types";
+import "./page.css";
+import Paragraph from "../../components/Paragraph/Paragraph.jsx";
 
 const CompanyList = () => {
   const CompanyCard = ({ description, website, logo, title }) => {
@@ -15,7 +15,7 @@ const CompanyList = () => {
         <div>
           <p className="company-card-description">{description}</p>
           <a href={website} target="_blank" rel="noreferrer" className="company-card-website">
-          <img scr="/link.svg" alt="" className="company-card-link.img"></img>
+            <img scr="/link.svg" alt="" className="company-card-link.img"></img>
             Visit Website
           </a>
         </div>
@@ -30,23 +30,66 @@ const CompanyList = () => {
     title: PropTypes.string.isRequired,
   };
   const companies = [
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 1' },
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 2' },
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 3' },
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 4' },
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 5' },
-    { description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', website: 'https://www.example.com', logo: 'ensign.png', title: 'Company 6' },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 1",
+    },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 2",
+    },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 3",
+    },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 4",
+    },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 5",
+    },
+    {
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      website: "https://www.example.com",
+      logo: "ensign.png",
+      title: "Company 6",
+    },
   ];
-
 
   return (
     <div className="page">
-      <div classname="Intro">
-      <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
+      <div className="Intro">
+        <Paragraph
+          title="Welcome to My Portfolio"
+          text={[
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          ]}
+        />
       </div>
       <div className="company-list">
         <div className="company-row">
-        {companies.map((company, index) => <CompanyCard key={index} {...company} />)}
+          {companies.map((company, index) => (
+            <CompanyCard key={index} {...company} />
+          ))}
         </div>
       </div>
     </div>

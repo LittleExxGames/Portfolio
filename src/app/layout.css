@@ -7,10 +7,10 @@ position: fixed;
   z-index: 100;
   padding-top: 20px;
 }
-Navbar {
-    //position: fixed;
+/*Navbar {
+    position: fixed;
 
-}
+}*/
 Footer{
   bottom: 0;
   width: 100%;

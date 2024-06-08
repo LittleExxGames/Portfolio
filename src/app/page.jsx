@@ -5,6 +5,7 @@ import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 import Paragraph from '../components/Paragraph/Paragraph.jsx';
+//import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 
 export const metadata = {
   title: 'Portfolio - Home',
@@ -32,20 +33,23 @@ const Home = () => {
         <div className='profileMain'>
           <img src="GigaChad.png" alt="Profile" />
         </div>
-        <Paragraph title="Welcome to My Portfolio" text={["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."]} />
+        <Paragraph title="Christopher Knowles" text={["I am a determined programmer, passionate creator, and a commited friend who loves to create and learn new things.", "My passion is to make fulfilling video games that help people explore and experience new worlds and connect with others through them."]} />
         {/* Add more paragraphs as needed */}
         <div className = 'profiles'>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/-christopher-knowles" target="_blank" rel="noopener noreferrer">
             <img src="linkedin-mode-light.png" alt="Linkedin" />
           </a>
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
             <img src="x-mode-light.png" alt="X" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/LittleExxGames" target="_blank" rel="noopener noreferrer">
             <img src="github-mode-light.png" alt="Github" />
           </a>
         </div>
       </div>
+      <div className = 'news'>
+        <h1>Newsletter</h1>
+        </div>
       <div className = 'body'>
         <div className= 'articles'>
           {/* Include the ArticleCard component with articleData */}

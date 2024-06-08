@@ -1,15 +1,16 @@
-import './Navbar.css';
-import PropTypes from 'prop-types';
+import Link from "next/link";
+import "./Navbar.css";
+import PropTypes from "prop-types";
 
 function Navbar({ links }) {
   return (
-    <nav data-testid="nav" className={'navbar'}>
-      <ul data-testid="ul" >
+    <nav data-testid="nav" className={"navbar"}>
+      <ul data-testid="ul">
         {links?.map((link, index) => (
           <li key={index} data-testid={`li${index}`}>
-            <a data-testid={`a${index}`} href={link.url} className="link">
+            <Link data-testid={`a${index}`} href={link.url} className="link">
               {link.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
