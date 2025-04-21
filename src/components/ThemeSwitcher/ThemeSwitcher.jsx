@@ -2,9 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import "./ThemeSwitcher.css";
+//import { useTheme } from '../ThemeContext/ThemeContext.jsx';
 import PropTypes from "prop-types";
 
 const ThemeSwitcher = ({ darkClassName = "dark" }) => {
+  
+  //const { theme, togTheme } = useTheme();
+
   const [isClient, setIsClient] = useState(false);
   // Apply the selected theme (dark or light) when the component mounts
   useEffect(() => {
@@ -31,28 +35,42 @@ const ThemeSwitcher = ({ darkClassName = "dark" }) => {
 
   // Apply the selected theme by adding/removing a class to the body element
   const applyTheme = () => {
+    const ovalContainer = document.querySelector('.oval-container');
     if (isDarkMode) {
       document.body.classList.add(darkClassName);
-      return;
+      ovalContainer.classList.add('dark-mode');
+      ovalContainer.classList.remove('light-mode');
+    } else {
+      document.body.classList.remove(darkClassName);
+      ovalContainer.classList.add('light-mode');
+      ovalContainer.classList.remove('dark-mode');
     }
-    document.body.classList.remove(darkClassName);
   };
 
   // Toggle between dark and light mode
   const toggleTheme = () => {
+    //togTheme;
     //setIsDarkMode((isDarkMode) => !isDarkMode);
     setIsDarkMode(!isDarkMode);
     applyTheme();
   };
-
+  //<button onClick={toggleTheme} className="btn" >
+  //{isDarkMode ? <img src="black-moon.png" className="icon" alt="Dark mode img" /> : <img src="yellow-sun.png" className="icon" alt="Light mode img" />}
+  //</button>
   return (
     <div>
-      <button onClick={toggleTheme} className="btn" >
-      {isDarkMode ? <img src="black-moon.png" className="icon" alt="Dark mode img" /> : <img src="yellow-sun.png" className="icon" alt="Light mode img" />}
-        {//isDarkMode ? "To Dark Mode" : "To Light Mode"
-        }
-      </button>
+  <div className="theme-switcher">
+    <div className="oval-container">
+      <img src="yellow-sun.png" className="icon left-icon" alt="Light mode" />
+      <label className="switch">
+        <input type="checkbox" checked={isDarkMode} onChange={toggleTheme} />
+        <span className="slider round"></span>
+      </label>
+      <img src="black-moon.png" className="icon right-icon" alt="Dark mode" />
     </div>
+  </div>
+    </div>
+    
   );
 };
 

@@ -1,4 +1,4 @@
-.btn {
+/*.btn {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -17,4 +17,107 @@
   height: 30px;
   max-width: 30px;
   max-height: 30px;
+}*/
+
+
+
+.theme-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base style for the oval container */
+.oval-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  border-radius: 50px;
+  transition: background-image 0.4s; /* Adjusted for smooth transition */
+  background-image: radial-gradient(circle at 100% center, #FFF 50%, rgba(255, 255, 255, 0) 100%); /* Start with gradient on one side */
+}
+
+/* Animation for light mode: Gradient moves to the left */
+@keyframes lightModeGradient {
+  from {
+    background-image: radial-gradient(circle at 0% center, #FFF 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  to {
+    background-image: radial-gradient(circle at 100% center, #333 50%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+/* Animation for dark mode: Gradient moves to the right */
+@keyframes darkModeGradient {
+  from {
+    background-image: radial-gradient(circle at 100% center, #ffffff 50%, rgba(51, 51, 51, 0) 100%);
+  }
+  to {
+    background-image: radial-gradient(circle at 0% center, #333 50%, rgba(51, 51, 51, 0) 100%);
+  }
+}
+
+/* Light mode class for the parent oval */
+.oval-container.light-mode {
+  animation: lightModeGradient 0.4s forwards; /* Apply light mode gradient animation */
+}
+
+/* Dark mode class for the parent oval */
+.oval-container.dark-mode {
+  animation: darkModeGradient 0.4s forwards; /* Apply dark mode gradient animation */
+}
+
+.icon {
+  height: 24px; /* Adjust as needed */
+  width: 24px; /* Adjust as needed */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Adjust as needed */
+  height: 34px; /* Adjust as needed */
+}
+
+/* Hide the checkbox visually but remain accessible */
+.switch input[type="checkbox"] {
+  width: 100%; /* Cover the whole switch area */
+  height: 100%; /* Cover the whole switch area */
+  margin: 0;
+  opacity: 0; /* Make the checkbox invisible */
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer; /* Optional: to show a pointer cursor when hovering over the switch */
+}
+
+/* Switch slider styling */
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent; /* Keep the slider background transparent */
+  border: 2px solid #ccc; /* Visible border for the slider */
+  border-radius: 34px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Adjust as needed */
+  width: 26px; /* Adjust as needed */
+  right: 2px;
+  bottom: 2px;
+  background-color: rgb(18, 146, 37);
+  transition: .4s;
+  border-radius: 50%;
+}
+
+
+input:checked + .slider:before {
+  transform: translateX(-26px); /* Adjust based on the slider width */
 }

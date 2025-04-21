@@ -1,10 +1,11 @@
-import React from 'react';
+import {useContext} from 'react';
 import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
 import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 import Paragraph from '../components/Paragraph/Paragraph.jsx';
+import { useTheme } from '../components/ThemeContext/ThemeContext.jsx';
 //import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 
 export const metadata = {
@@ -13,6 +14,11 @@ export const metadata = {
 }
 
 const Home = () => {
+  console.log('useTheme:', typeof useTheme, 'ThemeProvider:', typeof ThemeProvider);
+  //const { theme }= useContext(ThemeContext);
+  //console.log('useTheme:', useContext(ThemeContext));
+  const { theme } = useTheme();
+  console.log('Theme in Home:', theme); // Should log 'light' or 'dark'
   // Example article data
   const articleData = {
     date: '2024-04-07',
@@ -29,7 +35,7 @@ const Home = () => {
 
   return (
     <div className='page'>
-      <div className = 'intro'>
+      <div className = 'intro' data-theme="dark">
         <div className='profileMain'>
           <img src="GigaChad.png" alt="Profile" />
         </div>
