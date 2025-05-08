@@ -2,24 +2,25 @@
   display: flex;
   flex-direction: column;
   padding: 24px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--edges);
   border-radius: 6px;
   width: 100%;
   max-width: 420px;
   row-gap: 12px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 var(--shadow);
+  background-color: var(--background-secondary);
 }
 
 .skills-widget h2 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .skills-widget p {
   font-size: 16px;
-  color: #777;
+  color: var(--text-secondary);
 }
 
 .skills-widget ul {
@@ -53,7 +54,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-secondary);
 }
 
 .skills-item-proficiency {

@@ -3,9 +3,9 @@
   flex-direction: row;
   justify-items: center;
   justify-content: space-between;
-  background-color: #f8f9fa;
+  background-color: var(--background-secondary);
   padding: 24px 40px;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid var(--edges);
 }
 
 @media (max-width: 600px) {
@@ -23,17 +23,17 @@
 }
 
 .footer ul a {
-  color: #555;
+  color: var(--text-primary);
   text-decoration: none;
 }
 
 .footer ul a:hover {
-  color: #333;
+  color: var(--text-secondary);
   text-decoration: underline;
 }
 
 .footer p {
-  color: #777;
+  color: var(--text-primary);
   font-size: 14px;
   margin: 0;
 }

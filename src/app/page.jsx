@@ -1,4 +1,4 @@
-import {useContext} from 'react';
+"use client"
 import './page.css';
 import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 import WorkWidget from '../components/WorkWidget/WorkWidget.jsx';
@@ -6,20 +6,23 @@ import SkillsWidget from '../components/SkillsWidget/SkillsWidget.jsx';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 import Paragraph from '../components/Paragraph/Paragraph.jsx';
 import { useTheme } from '../components/ThemeContext/ThemeContext.jsx';
-//import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
+import Head from 'next/head';
 
-export const metadata = {
-  title: 'Portfolio - Home',
-  description: 'Home page of my portfolio.',
-}
+
+// export const metadata = {
+//   title: 'Portfolio - Home',
+//   description: 'Home page of my portfolio.',
+// }
 
 const Home = () => {
-  console.log('useTheme:', typeof useTheme, 'ThemeProvider:', typeof ThemeProvider);
-  //const { theme }= useContext(ThemeContext);
-  //console.log('useTheme:', useContext(ThemeContext));
+
   const { theme } = useTheme();
   console.log('Theme in Home:', theme); // Should log 'light' or 'dark'
-  // Example article data
+
+  const getImageSrc = (baseName) => {
+    return theme === "dark" ? `${baseName}-mode-dark.png` : `${baseName}-mode-light.png`;
+  };
+
   const articleData = {
     date: '2024-04-07',
     title: 'Example Article',
@@ -34,8 +37,12 @@ const Home = () => {
   ];
 
   return (
+    <><Head>
+    <title>Portfolio - Home</title>
+    <meta name="description" content="Home page of my portfolio." />
+  </Head>
     <div className='page'>
-      <div className = 'intro' data-theme="dark">
+      <div className = 'intro'>
         <div className='profileMain'>
           <img src="GigaChad.png" alt="Profile" />
         </div>
@@ -43,13 +50,13 @@ const Home = () => {
         {/* Add more paragraphs as needed */}
         <div className = 'profiles'>
           <a href="https://www.linkedin.com/in/-christopher-knowles" target="_blank" rel="noopener noreferrer">
-            <img src="linkedin-mode-light.png" alt="Linkedin" />
+            <img src={getImageSrc("linkedin")} alt="Linkedin" />
           </a>
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-            <img src="x-mode-light.png" alt="X" />
+            <img src={getImageSrc("x")} alt="X" />
           </a>
           <a href="https://github.com/LittleExxGames" target="_blank" rel="noopener noreferrer">
-            <img src="github-mode-light.png" alt="Github" />
+            <img src={getImageSrc("github")} alt="Github" />
           </a>
         </div>
       </div>
@@ -131,6 +138,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

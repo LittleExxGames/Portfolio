@@ -1,12 +1,18 @@
 :root {
     --background: white;
+    --background-secondary: white;
     --text-primary: black;
-    --text-secondary: royalblue;
+    --text-secondary: rgb(129, 129, 139);
     --accent: purple;
+    --edges: #e0e0e0;
+    --shadow: rgba(0, 0, 0, 0.1);
   }
   [data-theme='dark'] {
-    --background: black;
+    --background: rgb(31, 31, 31);
+    --background-secondary: rgb(22, 22, 22);
     --text-primary: white;
     --text-secondary: grey;
     --accent: darkred;
+    --edges: #333;
+    --shadow: rgba(0, 0, 0, 0.5);
   }
